@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     background-color:#77bd3e; ;
     margin: 0;
@@ -44,7 +44,7 @@
   .home{
     background-color: #77bd3e;
   }
-
+  
   #creatorCredit{
     position: absolute;
     bottom: 0px;
