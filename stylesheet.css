@@ -34,15 +34,23 @@
     background-color: rgb(51, 153, 51);
     color: black;
   }
-  .content {
-    margin-left: 720px;
-    padding-left: 30px;
-  }
 
   .homeImages{
       margin-left: 550px;
       padding-left: 30px
   }
+
+  .home{
+    background-color: #77bd3e;
+  }
+
+  #creatorCredit{
+    position: absolute;
+    bottom: 0px;
+    right: 3px
+  }
+
+
   
   /* Style the content */
  
