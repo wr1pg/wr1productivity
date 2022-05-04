@@ -1,160 +1,123 @@
-/* Basic Style */
-
-body {
-	background: #77bd3e;
-	color: #333;
-	font-family: Lato, sans-serif;
-	background-color: #77bd3e;
-}
-#todoHome{
-    position: absolute;
-    bottom: 665px;
-    right: 580px
-}
-.container {
-	display: block;
-	width: 400px;
-	margin: 10px auto 100px;
-	background-color:#b2ec5d;
-	padding:0px 10px 10px 10px;
-	border-radius:10px
-}
-
-h2 {
-	text-align:center;
-	padding-top:10px;
-	margin-bottom:0px;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-li * {
-	float: left;
-}
-
-li,
-h3 {
-	clear: both;
-	list-style: none;
-}
-
-input,
-button {
-	outline: none;
-}
-
-button {
-	background: none;
-	border: 0px;
-	color: #888;
-	font-size: 15px;
-	width: 60px;
-	margin: 10px 0 0;
-	font-family: Lato, sans-serif;
-	cursor: pointer;
-}
-
-button:hover {
-	color: #333;
-}
 
 
-/* Heading */
+    * {
+      margin: 0
+    }
 
-h3,
-label[for='new-task'] {
-	color: #333;
-	font-weight: 700;
-	font-size: 15px;
-	border-bottom: 2px solid #333;
-	padding: 20px 0 10px;
-	margin: 0;
-	text-transform: uppercase;
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      background-color: #87CEFA;
+      height: 100vh;
+      font-family: sans-serif;
+    }
 
-input[type="text"] {
-	margin: 0;
-	font-size: 18px;
-	line-height: 18px;
-	height: 18px;
-	padding: 10px;
-	border: 1px solid #ddd;
-	background: #fff;
-	border-radius: 6px;
-	font-family: Lato, sans-serif;
-	color: #888;
-}
+    .app {
+      width: 60%;
+    }
 
-input[type="text"]:focus {
-	color: #333;
-}
+    @media (max-width:768px) {
+      .app {
+        width: 90%;
+      }
+    }
 
+    .app h1 {
+      color: black;
+      font-size: 40px;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: .5rem .5rem 0 0;
+      background-color: #7B68EE;
+      font-family: "Rajdhani", sans-serif;
+    }
 
-/* New Task */
+    .app form {
+      display: flex;
+      width: 100%;
+      background-color: #262e4c;
+    }
 
-label[for='new-task'] {
-	display: block;
-	margin: 0 0 20px;
-}
+    .app form input {
+      border: none;
+      background-color: #fff;
+      font-size: 18px;
+      color: black;
+      padding: 10px;
+      width: 90%;
+    }
 
-input#new-task {
-	float: left;
-	width: 318px;
-}
+    .app form button {
+      border: none;
+      color: white;
+      background-color: #1dd2af;
+      font-size: 25px;
+      font-weight: 600;
+      height: 42px;
+      width: 10%;
+    }
 
-p > button:hover {
-	color: #0FC57C;
-}
+    .app ul {
+      list-style: none;
+      color: black;
+      padding: 0;
+    }
 
+    .app ul li {
+      padding: 10px;
+      background-color: #ADD8E6;
+    }
 
-/* Task list */
+    .check {
+      width: 0.8em;
+      height: 0.8em;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid rgb(255, 255, 255);
+      -webkit-appearance: none;
+    }
 
-li {
-	overflow: hidden;
-	padding: 20px 0;
-	border-bottom: 1px solid #eee;
-}
+    .check:checked {
+      background-color: #1dd2af;
+    }
 
-li > input[type="checkbox"] {
-	margin: 0 10px;
-	position: relative;
-	top: 15px;
-}
+    .task {
+      font-size: 18px;
+      padding: 0 10px;
+      width: fit-content;
+      background: transparent;
+      border: none;
+      color: black;
+    }
 
-li > label {
-	font-size: 18px;
-	line-height: 40px;
-	width: 237px;
-	padding: 0 0 0 11px;
-}
+    .task:focus {
+      outline: none;
+    }
 
-li > input[type="text"] {
-	width: 226px;
-}
-li > .delete {
-	color: #CF2323;
-}
+    .app ul li i {
+      float: right;
+      cursor: pointer;
+    }
 
-/* Completed */
+    .app ul li i:hover {
+      color: rgb(255, 82, 82);
+    }
 
-#completed-tasks label {
-	text-decoration: line-through;
-	color: #888;
-}
+    .completed {
+      color: rgba(192, 192, 192, 0.8);
+      text-decoration: line-through;
+    }
 
-/* Edit Task */
-
-ul li input[type=text] {
-	display: none;
-}
-
-ul li.editMode input[type=text] {
-	display: block;
-}
-
-ul li.editMode label {
-	display: none;
-}
+    #todoHome {
+        position: absolute;
+        width: 50px;
+        background-color: cornflowerblue;
+        padding: 10px;
+        margin: 0;
+        bottom: 618px;
+        right: 490px;
+        border-radius: 6px;
+    }
