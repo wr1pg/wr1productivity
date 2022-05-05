@@ -46,7 +46,7 @@
       font-size: 18px;
       color: black;
       padding: 10px;
-      width: 90%;
+      width: 100%;
     }
 
     .app form button {
@@ -107,7 +107,7 @@
     }
 
     .completed {
-      color: rgba(192, 192, 192, 0.8);
+      color: darkslategrey;
       text-decoration: line-through;
     }
 

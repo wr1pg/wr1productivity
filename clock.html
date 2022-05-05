@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./clockStyle.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }</style>
+  </head>
+  <body>
+    <div id='main-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alarm-container'>
+			<h1>Study Until</h1>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</div>
+				</label>
+				</div>
+		</div>
+
+		<div id='buttonHolder'>
+			<div id="setAlarmBut">
+				<button  id='setButton' onClick='alarmSet()'><bold>Set Alarm</bold></button>
+			</div>
+
+			<div id="clearAlarmBut">
+				<button  id='clearButton' onClick='alarmClear()'><bold>Clear Alarmow</bold></button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<center><a id="clockHome" href="index.html">Home</a></center>
+
+		<script type='text/javascript' src='clock.js'></script>
+  </body>
+</html>
