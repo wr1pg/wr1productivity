@@ -103,12 +103,9 @@ function alarmSet() {
 	document.getElementById('ampm').disabled = true;
 
 
-//when alarmtime is equal to currenttime then play a sound
 	var h2 = document.getElementById('clock');
 
-/*function to calcutate the current time 
-then compare it to the alarmtime and play a sound when they are equal
-*/
+
 
 setInterval(function(){
 
@@ -143,8 +140,6 @@ setInterval(function(){
 
 },1000);
 
-
-	// console.log('currentTime:' + currentTime);	
 
 }
 
